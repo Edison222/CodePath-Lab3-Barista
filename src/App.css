@@ -1,7 +1,64 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
 }
 
+body {
+  background-color: #fffbfb; /* Light gray background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: black; /* Set text color to black */
+}
+
+/* Main Container */
+.container {
+  display: flex;
+  justify-content: space-evenly; /* Evenly space the mini-containers */
+  align-items: flex-start; /* Align items at the start */
+  margin: auto; /* Center the container */
+  position: relative; /* Relative positioning for the container */
+  flex-wrap: wrap; /* Allow items to wrap in case of small screens */
+}
+
+/* Mini-container for each ingredient section */
+.mini-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  margin: 50px; /* Margin around mini-containers */
+  color: black; /* Ensure text is black within mini-containers */
+}
+
+/* Answer Space Styles */
+.answer-space {
+  background-color: #fff5c2; /* Light yellow for visibility */
+  width: 100%; /* Full width */
+  height: 50px; /* Set height for visibility */
+  border: 1px solid #000000; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  display: flex; /* Flexbox to center the text */
+  align-items: center; /* Center text vertically */
+  padding: 0 10px; /* Padding inside the box */
+  color: black; /* Set text color to black */
+}
+
+/* Background color for correct/incorrect indicators */
+.correct {
+  background-color: #c8e6c9; /* Light green for correct answers */
+  color: black; /* Ensure text color is black */
+}
+
+.wrong {
+  background-color: #ffccbc; /* Light red for wrong answers */
+  color: black; /* Ensure text color is black */
+}
+
+/* List style reset for radio button choices */
+li {
+  list-style: none; /* Remove bullet points */
+  color: black; /* Set text color to black */
+}
